@@ -1,0 +1,19 @@
+{
+  "name": "builderpatternflutter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build pages/1_slides.md",
+    "dev": "slidev pages/1_slides.md --open",
+    "export": "slidev export pages/1_slides.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.9.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.24"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.2.14"
+  }
+}
