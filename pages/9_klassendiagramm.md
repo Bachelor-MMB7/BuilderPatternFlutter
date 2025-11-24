@@ -1,0 +1,3 @@
+# Klassendiagramm
+
+Builder Pattern Struktur
