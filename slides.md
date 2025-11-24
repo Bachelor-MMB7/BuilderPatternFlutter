@@ -1,5 +1,5 @@
 ---
-theme: seriph
+theme: dracula
 background: /images/background/FlutterBurger.png
 backgroundSize: cover
 title: Builder Pattern in Flutter
