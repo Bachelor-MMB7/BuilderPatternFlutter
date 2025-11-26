@@ -31,16 +31,12 @@ Design Patterns für moderne App-Entwicklung
 </div>
 
 ---
-transition: slide-right
 hideInToc: true
 disabled: true
 
 src: ./pages/1_agenda.md
 ---
-
 ---
-transition: none
-
 src: ./pages/2_einstiegsproblem.md
 ---
 
