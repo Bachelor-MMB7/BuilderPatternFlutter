@@ -41,8 +41,6 @@ src: ./pages/2_einstiegsproblem.md
 ---
 
 ---
-transition: fade-out
-
 src: ./pages/3_was_ist_builder_pattern.md
 ---
 

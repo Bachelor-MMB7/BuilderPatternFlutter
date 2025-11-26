@@ -117,7 +117,7 @@ class Main {
 ```
 
 ---
-transition: transition-view
+transition: slide-left
 ---
 
 # Einstiegsproblem
