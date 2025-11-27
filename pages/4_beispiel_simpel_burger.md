@@ -2,7 +2,7 @@
 transition: none
 ---
 
-# Vergleich mit void
+# Vergleich
 
 <div class="grid grid-cols-2 gap-8">
 <div class="flex flex-col">
@@ -26,7 +26,7 @@ Problem: Parameter unklar, unflexibel
 </div>
 <div v-click="2" class="flex flex-col">
 
-**Nachher: Mit Builder Pattern** <span class="inline-block cursor-help" title="build() ist eine Methode mit Rückgabewert - wie jede andere auch (z.B. addiere(2,3) gibt 5 zurück). Die Methode erstellt etwas und gibt es zurück, speichert aber nichts. Ohne 'var burger = ...' wird der Burger erstellt und sofort weggeworfen. Mit 'var burger = ...' wird er gespeichert und kann verwendet werden.">ℹ️</span>
+**Nachher: Mit Builder Pattern mit void Settern** <span class="inline-block cursor-help" title="build() ist eine Methode mit Rückgabewert - wie jede andere auch (z.B. addiere(2,3) gibt 5 zurück). Die Methode erstellt etwas und gibt es zurück, speichert aber nichts. Ohne 'var burger = ...' wird der Burger erstellt und sofort weggeworfen. Mit 'var burger = ...' wird er gespeichert und kann verwendet werden.">ℹ️</span>
 
 ```dart
 void main() {
@@ -115,8 +115,10 @@ void main() {
 
 **Setter-Methoden**
 
-```dart {4-6}
+```dart {6-8}
 class BurgerBuilder {
+  // ...
+  bool _cheese = false;
   // ...
 
   void setCheese() {
