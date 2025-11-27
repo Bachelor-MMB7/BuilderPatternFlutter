@@ -2,7 +2,7 @@
 transition: none
 ---
 
-# Vergleich
+# Vergleich mit void
 
 <div class="grid grid-cols-2 gap-8">
 <div class="flex flex-col">
@@ -11,7 +11,7 @@ transition: none
 
 ```dart {1-3}
 void main() {
-
+  
   var burger = Burger('Sesam','Rind',true,true,false);
   //                                           ^onions?
 }
@@ -26,13 +26,13 @@ Problem: Parameter unklar, unflexibel
 </div>
 <div v-click="2" class="flex flex-col">
 
-**Nachher: Mit Builder Pattern**
+**Nachher: Mit Builder Pattern** <span class="inline-block cursor-help" title="build() ist eine Methode mit Rückgabewert - wie jede andere auch (z.B. addiere(2,3) gibt 5 zurück). Die Methode erstellt etwas und gibt es zurück, speichert aber nichts. Ohne 'var burger = ...' wird der Burger erstellt und sofort weggeworfen. Mit 'var burger = ...' wird er gespeichert und kann verwendet werden.">ℹ️</span>
 
 ```dart
 void main() {
-  var burger = BurgerBuilder('Brioche','Rind')
-      .setCheese()
-      .build();
+  var burgerBuilder = BurgerBuilder('Brioche','Rind');
+  burgerBuilder.setCheese();
+  var burger = burgerBuilder.build();
 }
 ```
 
@@ -58,9 +58,9 @@ transition: zoom-in
 
 ```dart {1-2}
 void main() {
-  var burger = BurgerBuilder('Brioche','Rind')
-      .setCheese()
-      .build();
+  var burgerBuilder = BurgerBuilder('Brioche','Rind');
+  burgerBuilder.setCheese();
+  var burger = burgerBuilder.build();
 }
 ```
 
@@ -104,9 +104,9 @@ transition: none
 
 ```dart {3}
 void main() {
-  var burger = BurgerBuilder('Brioche','Rind')
-      .setCheese()
-      .build();
+  var burgerBuilder = BurgerBuilder('Brioche','Rind');
+  burgerBuilder.setCheese();
+  var burger = burgerBuilder.build();
 }
 ```
 
@@ -148,9 +148,9 @@ transition: slide-left
 
 ```dart {4}
 void main() {
-  var burger = BurgerBuilder('Brioche','Rind')
-      .setCheese()
-      .build();
+  var burgerBuilder = BurgerBuilder('Brioche','Rind');
+  burgerBuilder.setCheese();
+  var burger = burgerBuilder.build();
 }
 ```
 
