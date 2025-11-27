@@ -9,24 +9,47 @@ transition: none
 
 **Vorher: Ohne Builder Pattern**
 
-```dart {1-3}
+<div class="relative">
+
+<!-- Code 1 links -->
+<div v-click.hide="2">
+
+```dart {1-2,4}
 void main() {
-  
   var burger = Burger('Sesam','Rind',true,true,false);
   //                                           ^onions?
 }
 ```
 
-<div v-click="1" class="mt-auto text-red-400">
+</div>
 
-Problem: Parameter unklar, unflexibel
+<!-- Code 2 links -->
+<div v-click="2" v-motion :initial="{ y: 50, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { duration: 500 } }" class="absolute top-0 left-0 right-0">
+
+```dart
+void main() {
+  var burger = Burger(
+    'Sesam','Rind',false,true,
+    false,false,false,false,false,
+      false,true,false,
+        false,0,false,false,0,
+  );
+}
+```
 
 </div>
 
 </div>
-<div v-click="2" class="flex flex-col">
+
+</div>
+<div v-click="1" class="flex flex-col">
 
 **Nachher: Mit Builder Pattern mit void Settern** <span class="inline-block cursor-help" title="build() ist eine Methode mit Rückgabewert - wie jede andere auch (z.B. addiere(2,3) gibt 5 zurück). Die Methode erstellt etwas und gibt es zurück, speichert aber nichts. Ohne 'var burger = ...' wird der Burger erstellt und sofort weggeworfen. Mit 'var burger = ...' wird er gespeichert und kann verwendet werden.">ℹ️</span>
+
+<div class="relative">
+
+<!-- Code 1 rechts -->
+<div v-click.hide="2">
 
 ```dart
 void main() {
@@ -36,11 +59,37 @@ void main() {
 }
 ```
 
-<div v-click="3" class="mt-auto text-green-400">
+</div>
 
-Lösung: Selbstdokumentierend!
+<!-- Code 2 rechts -->
+<div v-click="2" v-motion :initial="{ y: 50, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { duration: 500 } }" class="absolute top-0 left-0 right-0">
+
+```dart
+void main() {
+  var burgerBuilder = BurgerBuilder('Sesam','Rind');
+  burgerBuilder.setCheese();
+  burgerBuilder.setOnions();
+  var burger = burgerBuilder.build();
+}
+```
 
 </div>
+
+</div>
+
+</div>
+</div>
+
+<!-- Texte in einem gemeinsamen Container -->
+<div v-click="3" class="grid grid-cols-2 gap-8 mt-24">
+<div class="text-red-400">
+
+Problem: Parameter unklar, unflexibel
+
+</div>
+<div class="text-green-400">
+
+Lösung: Selbstdokumentierend!
 
 </div>
 </div>
