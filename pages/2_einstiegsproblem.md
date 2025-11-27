@@ -9,17 +9,21 @@ Der einfache Konstruktor
 ```dart {1-8|1-16}
 class Burger {
   // Zutaten
-  final String _bread;
-  final String _patty;
-  final bool _cheese;
+  String _bun;
+  String _patty;
+  bool _cheese;
 
   // Konstruktor
-  Burger(this._bread, this._patty, this._cheese);
+  Burger(this._bun, this._patty, this._cheese);
 
-  // Methode
-  String getDescription() {
-    return 'Burger mit $_bread, $_patty${_cheese ? ", Käse" : ""}';
-  }
+  // Setter
+  set bun(String bun) => _bun = bun;
+  
+  //Getter
+    String getDescription() {
+        return 'Burger mit $_bun Brot, $_patty Patty, '
+            '${_cheese ? "mit" : "ohne"} Käse';
+    }
 }
 ```
 
@@ -42,7 +46,7 @@ void main() {
   var burger = Burger('Sesam', 'Rind', true);
   //                                    ^cheese
 
-  print(burger.getDescription());
+  burger.patty = 'Veggie'; 
 }
 ```
 
@@ -57,7 +61,7 @@ Der Telescoping Constructor
 ```dart {1,6-8,10,14-18}
 class Burger {
   // Zutaten
-  final String _bread;
+  final String _bun;
   final String _patty;
   final bool _cheese;
   final bool _sauce;
@@ -65,7 +69,7 @@ class Burger {
 
   // Konstruktor
   Burger(
-    this._bread,
+    this._bun,
     this._patty,
     this._cheese,
     this._sauce,
