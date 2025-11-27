@@ -49,8 +49,6 @@ src: ./pages/4_beispiel_simpel_burger.md
 ---
 
 ---
-transition: fade-out
-
 src: ./pages/5_beispiel_method_chaining.md
 ---
 
