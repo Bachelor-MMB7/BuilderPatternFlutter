@@ -187,7 +187,7 @@ class BurgerBuilder {
 </div>
 
 ---
-transition: slide-left
+transition: none
 ---
 
 # BurgerBuilder - build()

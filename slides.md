@@ -49,17 +49,15 @@ src: ./pages/4_beispiel_simpel_burger.md
 ---
 
 ---
+src: ./pages/7_immutable_vs_mutable.md
+---
+
+---
 src: ./pages/5_beispiel_method_chaining.md
 ---
 
 ---
 src: ./pages/6_beispiel_director.md
----
-
----
-transition: fade-out
-
-src: ./pages/7_immutable_vs_mutable.md
 ---
 
 ---
