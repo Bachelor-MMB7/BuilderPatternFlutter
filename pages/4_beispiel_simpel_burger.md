@@ -44,7 +44,7 @@ void main() {
 </div>
 <div v-click="1" class="flex flex-col">
 
-**Nachher: Mit Builder Pattern mit void Settern** <span class="inline-block cursor-help" title="build() ist eine Methode mit Rückgabewert - wie jede andere auch (z.B. addiere(2,3) gibt 5 zurück). Die Methode erstellt etwas und gibt es zurück, speichert aber nichts. Ohne 'var burger = ...' wird der Burger erstellt und sofort weggeworfen. Mit 'var burger = ...' wird er gespeichert und kann verwendet werden.">ℹ️</span>
+**Nachher: Mit Builder Pattern mit void Settern** 
 
 <div class="relative">
 
@@ -208,7 +208,7 @@ void main() {
 </div>
 <div>
 
-**build()-Methode**
+**build()-Methode** <span class="inline-block cursor-help" title="In der build()-Methode werden die Builder-Attribute dem Konstruktor der Burger-Produktklasse übergeben. Damit wird ein neues Burger-Objekt erstellt. In main() bekommt man also kein Builder-Objekt zurück, sondern ein Objekt vom Typ der Produktklasse Burger. Warum? Der Builder ist nur für die Konstruktion zuständig - alle anderen Methoden (z.B. getDescription()) bleiben in der Produktklasse. So vermeidet man Code-Duplikation, falls es mehrere Builder gibt.">ℹ️</span>
 
 ```dart {15-16}
 class BurgerBuilder {
