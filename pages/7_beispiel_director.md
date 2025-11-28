@@ -60,7 +60,7 @@ void main() {
 </div>
 
 ---
-transition: none
+transition: slide-left
 ---
 
 # Director - Optional

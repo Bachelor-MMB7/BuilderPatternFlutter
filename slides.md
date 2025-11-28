@@ -49,49 +49,37 @@ src: ./pages/4_beispiel_simpel_burger.md
 ---
 
 ---
-src: ./pages/7_immutable_vs_mutable.md
+src: ./pages/5_immutable_vs_mutable.md
 ---
 
 ---
-src: ./pages/5_beispiel_method_chaining.md
+src: ./pages/6_beispiel_method_chaining.md
 ---
 
 ---
-src: ./pages/6_beispiel_director.md
+src: ./pages/7_beispiel_director.md
 ---
 
 ---
-transition: slide-left
-
 src: ./pages/8_klassendiagramm.md
 ---
 
 ---
-transition: fade-out
-
 src: ./pages/9_live_demo_flutter.md
 ---
 
 ---
-transition: slide-right
-
-src: ./pages/10_vorteile_nachteile.md
+src: ./pages/11_vorteile_nachteile.md
 ---
 
 ---
-transition: slide-right
-
-src: ./pages/11_vergleich_factory_pattern.md
+src: ./pages/10_vergleich_factory_pattern.md
 ---
 
 ---
-transition: fade-out
-
-src: ./pages/12_diskussion.md
+src: ./pages/12_quellen.md
 ---
 
 ---
-transition: slide-left
-
-src: ./pages/13_quellen.md
+src: ./pages/13_diskussion.md
 ---
