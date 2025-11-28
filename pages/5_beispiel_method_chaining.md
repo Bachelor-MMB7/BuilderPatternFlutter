@@ -80,8 +80,8 @@ class BurgerBuilder {
     return this;
   }
 
-  BurgerBuilder setOnions() {
-    _onions = true;
+  BurgerBuilder setPickles() {
+    _pickles = true;
     return this;
   }
 
@@ -122,7 +122,7 @@ class BurgerBuilder {
   String _bun;
   String _patty;
   bool _cheese = false;
-  bool _onions = false;
+  bool _pickles = false;
 
   // BurgerBuilder(...)
 
@@ -131,10 +131,10 @@ class BurgerBuilder {
     return this;
   }
 
-  // BurgerBuilder setOnions() {...}
+  // BurgerBuilder setPickles() {...}
 
   Burger build() {
-    return Burger(_bun, _patty, _cheese, _onions);
+    return Burger(_bun, _patty, _cheese, _pickles);
   }
 }
 ```

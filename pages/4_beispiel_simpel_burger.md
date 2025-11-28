@@ -17,7 +17,7 @@ transition: none
 ```dart {1-2,4}
 void main() {
   var burger = Burger('Sesam','Rind',true,true,false);
-  //                                           ^onions?
+  //                                           ^pickles?
 }
 ```
 
@@ -68,7 +68,7 @@ void main() {
 void main() {
   var burgerBuilder = BurgerBuilder('Sesam','Rind');
   burgerBuilder.setCheese();
-  burgerBuilder.setOnions();
+  burgerBuilder.setPickles();
   var burger = burgerBuilder.build();
 }
 ```
@@ -116,7 +116,7 @@ void main() {
 </div>
 <div>
 
-**Builder-Klasse** <span class="inline-block cursor-help" title="cheese und onions werden bereits bei der Erstellung einer Instanz der Builder-Klasse initialisiert, da sie Standardwerte besitzen. Die Instanz hat automatisch die Werte false für die Variablen cheese und onions, bevor der Konstruktor die Variablen bun und patty füllt.">ℹ️</span>
+**Builder-Klasse** <span class="inline-block cursor-help" title="cheese und pickles werden bereits bei der Erstellung einer Instanz der Builder-Klasse initialisiert, da sie Standardwerte besitzen. Die Instanz hat automatisch die Werte false für die Variablen cheese und pickles, bevor der Konstruktor die Variablen bun und patty füllt.">ℹ️</span>
 
 ```dart {1-12}
 class BurgerBuilder {
@@ -124,7 +124,7 @@ class BurgerBuilder {
   String _bun;
   String _patty;
   bool _cheese = false;
-  bool _onions = false;
+  bool _pickles = false;
 
   // Konstruktor
   BurgerBuilder(
@@ -174,8 +174,8 @@ class BurgerBuilder {
     _cheese = true;
   }
 
-  void setOnions() {
-    _onions = true;
+  void setPickles() {
+    _pickles = true;
   }
   
   // ...
@@ -215,7 +215,7 @@ class BurgerBuilder {
   String _bun;
   String _patty;
   bool _cheese = false;
-  bool _onions = false;
+  bool _pickles = false;
   
   // BurgerBuilder(...)
   
@@ -223,10 +223,10 @@ class BurgerBuilder {
     _cheese = true;
   }
   
-  // void setOnions() {...}
+  // void setPickles() {...}
 
   Burger build() {
-    return Burger(_bun, _patty, _cheese, _onions);
+    return Burger(_bun, _patty, _cheese, _pickles);
   }
 }
 ```

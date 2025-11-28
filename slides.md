@@ -53,8 +53,6 @@ src: ./pages/5_beispiel_method_chaining.md
 ---
 
 ---
-transition: slide-right
-
 src: ./pages/6_beispiel_director.md
 ---
 
