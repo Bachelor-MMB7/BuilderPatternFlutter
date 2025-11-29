@@ -35,7 +35,7 @@ void main() {
 </div>
 <div class="relative">
 
-<div v-click="1" v-click.hide="3" class="absolute inset-0 flex items-center justify-center">
+<div v-click="[1, 3]" class="absolute inset-0 flex items-center justify-center">
 
 <img src="/images/memes/karen.png" class="max-h-80 rounded shadow-lg" />
 
