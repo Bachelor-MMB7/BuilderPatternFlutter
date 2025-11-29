@@ -8,4 +8,3 @@ Fragen zur Diskussion
 - **Habt ihr das Pattern schon mal verwendet?**
   - In welchem Kontext?
 
-TEST
