@@ -104,7 +104,6 @@ class BurgerDirector {
 
   Burger makeVeggieBurger() {
     return BurgerBuilder('Vollkorn', 'Gemüse')
-        .setCheese()
         .setPickles()
         .build();
   }

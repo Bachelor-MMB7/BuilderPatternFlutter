@@ -16,8 +16,8 @@ transition: none
 
 ```dart {1-2,4}
 void main() {
-  var burger = Burger('Sesam','Rind',true,true,false);
-  //                                           ^pickles?
+  var burger = Burger('Sesam','Rind',true,false,false);
+  //                                      ^pickles?
 }
 ```
 
@@ -44,7 +44,7 @@ void main() {
 </div>
 <div v-click="1" class="flex flex-col">
 
-**Nachher: Mit Builder Pattern mit void Settern** 
+**Nachher: Mit Builder Pattern** 
 
 <div class="relative">
 
@@ -84,7 +84,7 @@ void main() {
 <div v-click="3" class="grid grid-cols-2 gap-8 mt-24">
 <div class="text-red-400">
 
-Problem: Parameter unklar, unflexibel
+Problem: Parameter unklar, unflexibel, nicht schön
 
 </div>
 <div class="text-green-400">
@@ -144,7 +144,7 @@ class BurgerBuilder {
 transition: none
 ---
 
-# BurgerBuilder - Setter
+# BurgerBuilder - void Setter
 
 <div class="grid grid-cols-2 gap-4">
 <div>
