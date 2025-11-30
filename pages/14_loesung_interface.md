@@ -20,7 +20,7 @@ layout: quote
 **Interface definiert den Vertrag**
 
 ```dart
-abstract class Builder {
+abstract interface class BurgerBuilder {
   void setCheese();
   void setPickles();
   Burger build();
@@ -33,7 +33,7 @@ abstract class Builder {
 **Konkrete Builder implementieren** <span class="inline-block cursor-help" title="Die konkreten Builder haben hier Standardwerte (z.B. Brioche + Rind) fest eingebaut. Es gibt keine Pflichtfelder im Konstruktor - jeder Builder 'weiß' bereits, welchen Burger er baut.">ℹ️</span>
 
 ```dart {1,3,6-7,9,11,14-15}
-class ClassicBurgerBuilder implements Builder {
+class ClassicBurgerBuilder implements BurgerBuilder {
   @override
   void setCheese() { /* Cheddar */ }
 
@@ -41,7 +41,7 @@ class ClassicBurgerBuilder implements Builder {
   Burger build() => Burger('Brioche', 'Rind', ...);
 }
 
-class VeggieBurgerBuilder implements Builder {
+class VeggieBurgerBuilder implements BurgerBuilder {
   @override
   void setCheese() { /* Veganer Käse */ }
 
@@ -65,7 +65,7 @@ class VeggieBurgerBuilder implements Builder {
 ```dart
 class BurgerDirector {
 
-  Burger make(Builder builder) {
+  Burger make(BurgerBuilder builder) {
     builder.setCheese();
     builder.setPickles();
     return builder.build();
@@ -106,10 +106,10 @@ classDiagram
     direction TB
 
     class BurgerDirector {
-        +make(Builder) Burger
+        +make(BurgerBuilder) Burger
     }
 
-    class Builder {
+    class BurgerBuilder {
         <<interface>>
         +setCheese()
         +setPickles()
@@ -135,9 +135,9 @@ classDiagram
         -pickles
     }
 
-    BurgerDirector --> Builder
-    ClassicBurgerBuilder ..|> Builder
-    VeggieBurgerBuilder ..|> Builder
+    BurgerDirector --> BurgerBuilder
+    ClassicBurgerBuilder ..|> BurgerBuilder
+    VeggieBurgerBuilder ..|> BurgerBuilder
     ClassicBurgerBuilder ..> Burger
     VeggieBurgerBuilder ..> Burger
 ```
