@@ -121,8 +121,8 @@ void main() {
 ```dart {1-12}
 class BurgerBuilder {
   // Felder
-  String _bun;
-  String _patty;
+  final String _bun;
+  final String _patty;
   bool _cheese = false;
   bool _pickles = false;
 
@@ -212,17 +212,17 @@ void main() {
 
 ```dart {15-16}
 class BurgerBuilder {
-  String _bun;
-  String _patty;
+  final String _bun;
+  final String _patty;
   bool _cheese = false;
   bool _pickles = false;
-  
+
   // BurgerBuilder(...)
-  
+
   void setCheese() {
     _cheese = true;
   }
-  
+
   // void setPickles() {...}
 
   Burger build() {

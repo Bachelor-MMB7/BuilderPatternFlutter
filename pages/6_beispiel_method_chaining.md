@@ -119,8 +119,8 @@ void main() {
 
 ```dart {16-18}
 class BurgerBuilder {
-  String _bun;
-  String _patty;
+  final String _bun;
+  final String _patty;
   bool _cheese = false;
   bool _pickles = false;
 
