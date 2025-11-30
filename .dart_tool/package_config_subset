@@ -106,10 +106,6 @@ web
 3.4
 file:///C:/Users/mhelm/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/
 file:///C:/Users/mhelm/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/lib/
-builder_pattern_flutter
-3.0
-file:///C:/Users/mhelm/OneDrive/StudiumMMB7/Semester7/designPatterns/BuilderPatternFlutter/
-file:///C:/Users/mhelm/OneDrive/StudiumMMB7/Semester7/designPatterns/BuilderPatternFlutter/lib/
 sky_engine
 3.7
 file:///C:/Users/mhelm/dev/flutter/bin/cache/pkg/sky_engine/
@@ -122,4 +118,8 @@ flutter_test
 3.7
 file:///C:/Users/mhelm/dev/flutter/packages/flutter_test/
 file:///C:/Users/mhelm/dev/flutter/packages/flutter_test/lib/
+builder_pattern_flutter
+3.0
+file:///C:/Users/mhelm/projects/BuilderPatternFlutter/
+file:///C:/Users/mhelm/projects/BuilderPatternFlutter/lib/
 2

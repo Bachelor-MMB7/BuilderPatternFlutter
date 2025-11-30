@@ -4,6 +4,6 @@
 
 <img src="/images/qr/qrGithub.png" class="w-64 h-64" />
 
-<a href="https://github.com/Bachelor-MMB7/BuilderPatternDemo" target="_blank" class="mt-4 text-gray-400 hover:text-blue-400">github.com/Bachelor-MMB7/BuilderPatternDemo</a>
+<a href="https://github.com/Bachelor-MMB7/builder-pattern-demo" target="_blank" class="mt-4 text-gray-400 hover:text-blue-400">github.com/Bachelor-MMB7/builder-pattern-demo</a>
 
 </div>
