@@ -61,19 +61,19 @@ src: ./pages/7_beispiel_director.md
 ---
 
 ---
-src: ./pages/8_klassendiagramm.md
+src: ./pages/8_live_demo_flutter.md
 ---
 
 ---
-src: ./pages/9_live_demo_flutter.md
+src: ./pages/9_klassendiagramm.md
 ---
 
 ---
-src: ./pages/11_vorteile_nachteile.md
+src: ./pages/10_vorteile_nachteile.md
 ---
 
 ---
-src: ./pages/10_vergleich_factory_pattern.md
+src: ./pages/11_vergleich_factory_pattern.md
 ---
 
 ---
@@ -86,8 +86,4 @@ src: ./pages/13_diskussion.md
 
 ---
 src: ./pages/14_loesung_interface.md
----
-
----
-src: ./pages/13_diskussion.md
 ---

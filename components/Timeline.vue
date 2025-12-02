@@ -32,8 +32,8 @@ const sections = [
   { name: 'Builder', start: 7, end: 12 },
   { name: 'M. Chain.', start: 13, end: 16 },
   { name: 'Director', start: 17, end: 18 },
-  { name: 'UML', start: 19, end: 19 },
-  { name: 'Demo', start: 20, end: 20 },
+  { name: 'Demo', start: 19, end: 19 },
+  { name: 'UML', start: 20, end: 20 },
   { name: 'Pro/Con', start: 21, end: 21 },
   { name: 'Factory', start: 22, end: 22 },
 ]
