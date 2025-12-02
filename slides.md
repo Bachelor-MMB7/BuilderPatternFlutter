@@ -83,7 +83,3 @@ src: ./pages/12_quellen.md
 ---
 src: ./pages/13_diskussion.md
 ---
-
----
-src: ./pages/14_loesung_interface.md
----
