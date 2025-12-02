@@ -1,7 +1,5 @@
 # Klassendiagramm
 
-Builder Pattern einfache Struktur
-
 ```mermaid
 classDiagram
     direction LR
