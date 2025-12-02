@@ -56,7 +56,7 @@ transition: none
 
 # Einstiegsproblem
 
-Der Telescoping Constructor
+Telescoping Constructor Pattern (Anti-Pattern)
 
 ```dart {1,6-8,10,14-18}
 class Burger {
@@ -84,7 +84,7 @@ transition: view-transition
 
 # Einstiegsproblem
 
-Der Telescoping Constructor
+Telescoping Constructor Pattern (Anti-Pattern)
 
 <div v-click="3" v-motion :initial="{opacity: 0, height: 0}" :enter="{opacity: 1, height: 'auto', transition: {duration: 500}}">
 
@@ -102,8 +102,8 @@ void main() {
 
   var special400 = Burger('Sesam', 'Rind', true, true, true,
       false, true, false, false, true, false, true, false, 'Mais',
-      'Oliven', false, true, 'BBQ', false, true, false, true,
-      false, true, 'Honig', true);
+      'Oliven', false, true, 'BBQ', false, 5, 2, true,
+      false, true, 'Honig', true);  //     ^🌶️-Schoten 🥵
 
 
   print(burger.getDescription());

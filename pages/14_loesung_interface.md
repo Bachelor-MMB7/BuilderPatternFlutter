@@ -6,7 +6,7 @@ layout: quote
 
 <div class="flex-1 flex items-center justify-center text-center text-2xl">
 
-*Für Erweiterbarkeit: Sobald eine Methode des Builders anders implementiert werden soll<br><br>→ Interface + mehrere Builder*
+*wenn du mehrere Builder mit unterschiedlichen Implementierungen haben willst, die aber austauschbar sein sollen.<br><br>*
 
 </div>
 
