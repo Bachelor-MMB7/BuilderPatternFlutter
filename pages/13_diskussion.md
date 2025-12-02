@@ -8,7 +8,7 @@
 </div>
 
 <div class="p-3 rounded border border-gray-600">
-<strong>Warum nicht einfach Konstruktor + Setter der Produktklasse nutzen um ein Objekt zu erstellen? Damit spar ich mir doch den Builder?</strong>
+<strong>Warum nicht einfach Konstruktor + Setter der Produktklasse nutzen um ein Objekt zu erstellen? Damit spar ich mir doch den Builder?</strong> <span class="text-gray-500">(JavaBeans Pattern)</span>
 <div v-click class="mt-2 text-sm text-gray-400">Unfertige Objekte können versehentlich genutzt werden → Fehler. Lösung: Setter entfernen + Felder `final` → Objekt sofort immutable.</div>
 </div>
 
