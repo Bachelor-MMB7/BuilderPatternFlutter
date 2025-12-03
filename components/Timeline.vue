@@ -56,11 +56,11 @@ const currentSection = computed(() => {
       >
         <div
           class="w-1.5 h-1.5 rounded-full transition-all duration-300"
-          :class="index <= currentSection ? 'bg-green-600 scale-110' : 'bg-gray-600'"
+          :class="index <= currentSection ? 'bg-green-600 scale-110' : 'bg-gray-500'"
         />
         <span
           class="text-[8px] transition-all duration-300"
-          :class="index === currentSection ? 'text-gray-300 font-bold' : 'text-gray-500'"
+          :class="index === currentSection ? 'text-gray-200 font-bold' : 'text-gray-400'"
         >
           {{ section.name }}
         </span>
@@ -68,7 +68,7 @@ const currentSection = computed(() => {
       <div
         v-if="index < sections.length - 1"
         class="w-3 h-px transition-all duration-300"
-        :class="index < currentSection ? 'bg-green-600' : 'bg-gray-600'"
+        :class="index < currentSection ? 'bg-green-600' : 'bg-gray-500'"
       />
     </template>
   </div>
