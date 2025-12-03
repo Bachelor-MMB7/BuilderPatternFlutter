@@ -2,7 +2,7 @@
 transition: none
 ---
 
-# Director - Optional
+# Director - Optional <span style="color: #666; font-size: 0.6em; line-height: 1">\[2\]</span>
 
 <div class="grid grid-cols-2 gap-8">
 <div>
@@ -63,7 +63,7 @@ void main() {
 transition: slide-left
 ---
 
-# Director - Optional
+# Director - Optional <span style="color: #666; font-size: 0.6em; line-height: 1">\[2\]</span>
 
 <div class="grid grid-cols-2 gap-4">
 <div>

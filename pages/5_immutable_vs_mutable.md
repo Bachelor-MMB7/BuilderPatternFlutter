@@ -1,4 +1,4 @@
-# Immutable vs. Mutable
+# Immutable vs. Mutable <span style="color: #666; font-size: 0.6em; line-height: 1">\[3\]</span>
 
 <div class="grid grid-cols-2 gap-8">
 <div>

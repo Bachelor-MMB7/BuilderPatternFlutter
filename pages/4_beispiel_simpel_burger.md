@@ -2,7 +2,7 @@
 transition: none
 ---
 
-# Vergleich
+# Vergleich <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 <div class="grid grid-cols-2 gap-8">
 <div class="flex flex-col">
@@ -98,7 +98,7 @@ Lösung: Selbstdokumentierend!
 transition: zoom-in
 ---
 
-# BurgerBuilder
+# BurgerBuilder <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -144,7 +144,7 @@ class BurgerBuilder {
 transition: none
 ---
 
-# BurgerBuilder - void Setter
+# BurgerBuilder - void Setter <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -190,7 +190,7 @@ class BurgerBuilder {
 transition: none
 ---
 
-# BurgerBuilder - build()
+# BurgerBuilder - build() <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 <div class="grid grid-cols-2 gap-4">
 <div>

@@ -2,7 +2,7 @@
 transition: none
 ---
 
-# Einstiegsproblem
+# Einstiegsproblem <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 Der einfache Konstruktor
 
@@ -31,7 +31,7 @@ class Burger {
 transition: view-transition
 ---
 
-# Einstiegsproblem
+# Einstiegsproblem <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 Der einfache Konstruktor
 
@@ -54,7 +54,7 @@ void main() {
 transition: none
 ---
 
-# Einstiegsproblem
+# Einstiegsproblem <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 Telescoping Constructor Pattern (Anti-Pattern)
 
@@ -82,7 +82,7 @@ class Burger {
 transition: view-transition
 ---
 
-# Einstiegsproblem
+# Einstiegsproblem <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 Telescoping Constructor Pattern (Anti-Pattern)
 
@@ -114,7 +114,7 @@ void main() {
 transition: slide-left
 ---
 
-# Einstiegsproblem
+# Einstiegsproblem <span style="color: #666; font-size: 0.6em; line-height: 1">\[1\]</span>
 
 Der Subclass-Ansatz
 

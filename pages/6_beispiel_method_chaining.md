@@ -2,7 +2,7 @@
 transition: none
 ---
 
-# Void vs Method Chaining
+# Void vs Method Chaining <span style="color: #666; font-size: 0.6em; line-height: 1">\[3\]</span>
 
 <div class="grid grid-cols-2 gap-8">
 <div class="flex flex-col">
@@ -49,7 +49,7 @@ Kürzer und eleganter!
 transition: none
 ---
 
-# Method Chaining - Setter
+# Method Chaining - Setter <span style="color: #666; font-size: 0.6em; line-height: 1">\[3\]</span>
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -97,7 +97,7 @@ class BurgerBuilder {
 transition: slide-left
 ---
 
-# Method Chaining - build()
+# Method Chaining - build() <span style="color: #666; font-size: 0.6em; line-height: 1">\[3\]</span>
 
 <div class="grid grid-cols-2 gap-4">
 <div>
