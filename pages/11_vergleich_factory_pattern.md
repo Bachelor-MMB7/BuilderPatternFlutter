@@ -1,4 +1,4 @@
-# Verwandt zu Factory Pattern
+# Verwandt zu Factory Pattern <span style="color: #666; font-size: 0.6em; line-height: 1">\[2\, 5\]</span>
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 <div>

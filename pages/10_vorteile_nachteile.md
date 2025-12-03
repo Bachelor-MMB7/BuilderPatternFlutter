@@ -1,4 +1,4 @@
-# Vorteile und Nachteile
+# Vorteile und Nachteile <span style="color: #666; font-size: 0.6em; line-height: 1">\[3\]</span>
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 <div>

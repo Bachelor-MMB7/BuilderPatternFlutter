@@ -1,4 +1,4 @@
-# Klassendiagramm
+# Klassendiagramm <span style="color: #666; font-size: 0.6em; line-height: 1">\[4\]</span>
 
 ```mermaid
 classDiagram
