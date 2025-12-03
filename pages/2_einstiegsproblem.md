@@ -43,7 +43,7 @@ Der einfache Konstruktor
 ```dart {1-3,5-7}
 void main() {
 
-  var burger = Burger('Sesam', 'Rind', true);
+  var burger = Burger('Sesam', 'Rind', false);
   //                                    ^cheese
 
   burger.patty = 'Veggie'; 
