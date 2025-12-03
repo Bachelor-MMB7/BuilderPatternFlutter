@@ -5,7 +5,7 @@
 
 **Mutable (veränderbar)**
 
-```dart {1,3-15,19}
+```dart {1,3-15,18}
 class Burger {
   // Private Attribute
 
@@ -37,13 +37,15 @@ Objekt kann nach Erstellung geändert werden
 
 **Immutable (unveränderbar)** <span class="inline-block cursor-help" title="Wenn man das Objekt ändern möchte, erstellt man einfach ein neues Builder-Objekt mit den gewünschten Werten. So bleibt das Original unverändert und man hat volle Kontrolle.">ℹ️</span>
 
-```dart {1,3-5,9}
+```dart {1,3-5,7,10}
 class Burger {
   // Private Attribute
 
   Burger(this._bun, this._patty,
          this._cheese, this._pickles);
 
+  // Setter entfernt!
+  
   // Getter...
 }
 ```

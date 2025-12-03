@@ -37,7 +37,10 @@ void main() {
 
 <div v-click="[1, 3]" class="absolute inset-0 flex items-center justify-center">
 
+<div class="flex flex-col items-center">
 <img src="/images/memes/karen.png" class="max-h-80 rounded shadow-lg" />
+<span class="text-[10px] text-gray-500">Quelle: reddit.com/r/memes</span>
+</div>
 
 </div>
 
@@ -114,7 +117,10 @@ class BurgerDirector {
 
 <div v-click="2" class="absolute inset-0 flex items-center justify-center">
 
+<div class="flex flex-col items-center">
 <img src="/images/memes/karen2.png" class="max-h-60 rounded shadow-lg" />
+<span class="text-[10px] text-gray-500">Quelle: facebook.com/spongebob</span>
+</div>
 
 </div>
 
