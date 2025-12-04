@@ -84,6 +84,10 @@ class Burger {
 }
 ```
 
+<!--
+Für das nächste Problem erweitern wir die Burger-Klasse um zwei weitere Zutaten.
+-->
+
 ---
 transition: view-transition
 ---
@@ -116,6 +120,14 @@ void main() {
 }
 ```
 
+<!--
+Schauen wir uns dafür nochmal den einfachen Konstruktor-Aufruf an, um das Problem zu verdeutlichen.
+
+1. Hier sehen wir nochmal unseren ursprünglichen Burger-Konstruktor mit drei Parametern – noch überschaubar.
+2. Fügen wir jetzt Sauce und Zwiebeln hinzu, haben wir schon fünf Parameter und man selbst muss genau wissen, welcher Wert an welcher Stelle steht.
+3. Und jetzt stellt euch vor, ein Kunde möchte einen 'Special 400' mit vielen Extras... Der Konstruktor fährt aus wie ein Teleskop – daher der Name Telescoping Constructor. Das ist ein Anti-Pattern: Je mehr Optionen, desto länger und unübersichtlicher wird der Aufruf. Und welcher Boolean steht nochmal für die Chili-Schoten?
+-->
+
 ---
 transition: slide-left
 ---
@@ -129,10 +141,11 @@ Der Subclass-Ansatz
 **Problem 3: Explosion der Subklassen - Unwartbar**
 </div>
 
-```dart {2-13}
+```dart {2-3,5-14}
 class Burger { /* Basisklasse */ }
 
 class Cheeseburger extends Burger {
+  // Konstruktor der Basisklasse aufrufen
   Cheeseburger() : super('Sesam', 'Rind', true, false, false);
 }
 
@@ -144,3 +157,11 @@ class SwabBurger extends Burger {
   SwabBurger() : super('Brioche', 'Käsespätzle', true, true, true);
 }
 ```
+
+<!--
+Man könnte jetzt denken: Dann machen wir doch einfach für jede Burger-Variante eine eigene Subklasse.
+
+Das funktioniert bei drei Burgern noch. Aber was passiert, wenn wir eine neue Zutat hinzufügen – zum Beispiel Tomate? dann müssen wir in jeder Subklasse den Konstruktor-Aufruf der Basisklasse anpassen. Bei drei Klassen machbar, bei dreißig ein Alptraum.
+
+Und was ist mit einem Cheeseburger mit Zwiebeln? Oder einem Veggie-Burger ohne Sauce? Für jede Kombination bräuchten wir eine eigene Klasse – die Anzahl explodiert regelrecht.
+-->
