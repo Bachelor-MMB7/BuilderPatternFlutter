@@ -27,6 +27,12 @@ class Burger {
 }
 ```
 
+<!--
+Bevor wir zum Builder Pattern kommen, müssen wir uns erst einmal vor Augen führen, warum es dieses Pattern überhaupt gibt. Dazu schauen wir uns einige typische Probleme an.
+
+Wie gesagt möchten wir Burger erstellen. Dafür seht ihr hier eine Klasse Burger...
+-->
+
 ---
 transition: view-transition
 ---

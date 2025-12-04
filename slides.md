@@ -30,6 +30,12 @@ Design Patterns für moderne App-Entwicklung
 
 </div>
 
+<!--
+Ich präsentiere euch heute das Builder Pattern. Um das Pattern anschaulich vorzustellen, widmen wir uns der Erstellung von Burgern und nutzen dabei Flutter – ein Framework, das es ermöglicht, aus einer Codebase Apps für iOS, Android und Web zu entwickeln.
+
+Verwendet wird die Programmiersprache Dart, die eine Java-ähnliche Syntax bietet und leicht zu lesen ist.
+-->
+
 ---
 hideInToc: true
 disabled: true
