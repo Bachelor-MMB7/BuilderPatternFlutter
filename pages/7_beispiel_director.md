@@ -52,8 +52,8 @@ void main() {
 void main() {
   var director = BurgerDirector();
 
-  var burger1 = director.makeClassicBurger();
-  var burger2 = director.makeClassicBurger();
+  var burger1 = director.makeFullyLoaded();
+  var burger2 = director.makeCheeseLover();
 }
 ```
 
@@ -77,7 +77,7 @@ transition: slide-left
 void main() {
   
   var director = BurgerDirector();
-  var burger = director.makeClassicBurger();
+  var burger = director.makeFullyLoaded();
 
 }
 ```
@@ -98,16 +98,16 @@ Client bekommt Burger - muss Details nicht kennen!
 ```dart
 class BurgerDirector {
 
-  Burger makeClassicBurger() {
+  Burger makeFullyLoaded() {
     return BurgerBuilder('Brioche', 'Rind')
         .setCheese()
         .setPickles()
         .build();
   }
 
-  Burger makeVeggieBurger() {
+  Burger makeCheeseLover() {
     return BurgerBuilder('Vollkorn', 'Gemüse')
-        .setPickles()
+        .setCheese()
         .build();
   }
 }
